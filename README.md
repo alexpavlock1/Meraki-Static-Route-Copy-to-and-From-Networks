@@ -9,3 +9,6 @@ This code is essentially a copy paste function for static routes on Meraki MX's.
 The only steps you need to take here are adjust the API key to hoever you want to pull in your key and then copy in your source and destination network ID's to the variables source_networkId and destination_networkId.
 
 When running the GET call of static routes in our source network I also saved the ID of each static route. The delete static route API call requires the 'id' of each static route so this will make it easier to write an additional function if you want to delete static routes from the source network once they've been copied over
+
+
+There is also another script in here called staticroutetransferanddelete. This has all the code of the original script to transfer static routes but also includes if statements that for each route sucessfully copied over will delete the static route from the source org.
