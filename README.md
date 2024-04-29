@@ -11,4 +11,4 @@ The only steps you need to take here are adjust the API key to hoever you want t
 When running the GET call of static routes in our source network I also saved the ID of each static route. The delete static route API call requires the 'id' of each static route so this will make it easier to write an additional function if you want to delete static routes from the source network once they've been copied over
 
 
-There is also another script in here called staticroutetransferanddelete. This has all the code of the original script to transfer static routes but also includes if statements that for each route sucessfully copied over will delete the static route from the source org.
+There is also another script in here called staticroutetransferanddelete. This has all the code of the original script to transfer static routes but also includes if statements that for each route sucessfully copied over will delete the static route from the source network.
